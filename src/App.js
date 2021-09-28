@@ -1,4 +1,5 @@
 import './App.css';
+import './styles/styles.scss'
 
 import React, { Component } from 'react'
 import Header from './components/Header'
@@ -24,6 +25,7 @@ export class App extends Component {
       user: this.state.user,
       setUser: this.setUser,
     }
+
     return (
       <>
         <userContext.Provider value={value}>

@@ -1,0 +1,14 @@
+.formulario{
+    background: #eee;
+    width: 30%;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &--submit{
+        margin: 15px;
+    }
+}

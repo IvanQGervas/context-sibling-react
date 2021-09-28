@@ -29,7 +29,7 @@ class Formulario extends Component {
   render() {
 
     return (
-      <form onSubmit={this.submitForm} >
+      <form className="formulario" onSubmit={this.submitForm} >
         <label >Nombre: </label>
         <input type="text" name="nombre" ref={this.nombre} />
 
@@ -44,7 +44,7 @@ class Formulario extends Component {
 
         <userContext.Consumer>
           {({ user, setUser }) => {
-            return <input type="submit" onClick={() => {
+            return <input className="formulario--submit" type="submit" onClick={() => {
               setUser({ nombre: this.nombre.current.value, email: this.email.current.value, img: this.img.current.value, edad: this.edad.current.value })
               this.props.handleStateUser({ nombre: this.nombre.current.value, email: this.email.current.value, img: this.img.current.value, edad: this.edad.current.value })
             }} />

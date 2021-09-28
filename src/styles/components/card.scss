@@ -1,0 +1,32 @@
+.hidden{
+    display: none !important;
+}
+
+.card{
+    background: #eee;
+    width: 30%;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+
+    &--nombre{
+        font-weight: 16px;
+    }
+
+    &--edad{
+        font-weight: 400;
+    }
+
+    &--email{
+        font-weight: bold;
+        
+    }
+
+    &--img{
+        height: 150px;
+    }
+}

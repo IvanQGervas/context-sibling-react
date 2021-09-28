@@ -15,10 +15,10 @@ class Main extends Component {
   render() {
 
     return (
-      <>
+      <main className="main">
         <Formulario handleStateUser={this.handleStateUser} />
         <Card dataUser={this.state.user} />
-      </>
+      </main>
     );
   }
 }
